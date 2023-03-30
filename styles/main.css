@@ -1,0 +1,95 @@
+* {
+    font-family: Georgia;
+}
+.mycontainer {
+    text-align: center;
+    background-color: rgb(243, 232, 240);
+    padding: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.ncolor {
+    background-color:rgb(233, 250, 236);
+}
+.resize {
+    width: 400px;
+    height: auto;
+}
+.resize2 {
+    width: 600px;
+}
+.card-header{
+    background-color:  rgb(248, 250, 233);
+}
+p {
+    display: inline-block;
+    width: 850px;
+}
+.copyright {
+    float: left;
+    text-align: left;
+}
+.fclass {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+* {
+    box-sizing: border-box;
+}  
+.container2 {
+    text-align: center;
+}
+.carousel-indicators {
+    bottom: -35px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones and tablets: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    p {
+        display: inline-block;
+        width: 250px;
+    }
+    .resize {
+        width: 200px;
+        height: auto;
+    }
+    .copyright {
+        width: 200px;
+        float: left;
+        text-align: left;
+    }
+    .mycontainer {
+        text-align: center;
+        background-color: rgb(243, 232, 240);
+        padding: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .resize2 {
+        width: 250px;
+    }
+} 
+@media only screen and (min-width: 768px) {
+    .mycontainer {
+        text-align: center;
+        background-color: rgb(243, 232, 240);
+        padding: 15px;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    p {
+        display: inline-block;
+        width: 975px;
+    }
+    .resize {
+        width: 475px;
+        height: auto;
+    }
+    .resize2 {
+        width: 650px;
+    }
+
+} 

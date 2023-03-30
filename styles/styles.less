@@ -1,0 +1,50 @@
+/* LESS Styling */
+/* Sources
+https://stackoverflow.com/questions/17872913/carousel-indicators-not-showing-up-on-white-background-on-slides-custom-style-o
+https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel
+ */
+@secondary-color: rgb(233, 250, 236); /* variable */
+@tertiary-color:  rgb(228, 210, 228);
+
+.mycolor (@color) { /* mixin */
+    background-color: @color; 
+}
+
+.ncolor {
+    background-color: @secondary-color; /* variable rule 1 */
+}
+footer{
+    background-color: @secondary-color; /* variable rule 2 */
+}
+
+.mycontainer { 
+    #f {
+        .mycolor(@secondary-color) /* mixin rule 1 */
+    }
+}
+.card {
+    #three { /* nested set of rules */
+        .mycolor(@tertiary-color) /* mixin rule 2 */
+    }
+    #two {
+        .mycolor(@secondary-color)
+    }
+} 
+.img-rounded {
+    border-radius: 30%;
+    width: 90%;
+}
+.carousel .carousel-indicators li {
+    background-color: #fff;
+    background-color: rgba(70, 70, 70, 0.25);
+  }
+  
+.carousel .carousel-indicators .active {
+    background-color: #444;
+  }
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.carousel-control-next {
+    filter: invert(100%);
+}
